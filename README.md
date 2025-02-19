@@ -1,9 +1,9 @@
 #### WINDOWS REQ
->[NOTE]
+>[!NOTE]
 >Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
 #### GLOBAL REQ
-> [NOTE]
+> [!NOTE]
 >Install Python 3.10 or greater
 >pip install -r requirements.txt
 
