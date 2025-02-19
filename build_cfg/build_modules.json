@@ -1,17 +1,16 @@
 {
-    "modules":
-    {
-
+    "modules": {
+      
     },
-
-    "settings":
-    {
-        "check_cython": true,
-        "check_setuptools": true,
-        "create_if_not_exist": false,
-        "run_tests": true,
-        "print_result": true,
-        "traceback": true,
-        "prefix": ""
+    "settings": {
+      "check_cython": true,
+      "check_setuptools": true,
+      "run_tests": true,
+      "print_result": true,
+      "create_if_not_exist": false,
+      "auto_import": true,
+      "traceback": true,
+      "prefix": ""
     }
-}
+  }
+  

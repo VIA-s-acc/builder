@@ -1,1 +1,4 @@
 *.pyc
+/__pycache__/
+*.pyc/
+build_cfg/Utils/temp/__pycache__/create_temp.cpython-310.pyc
