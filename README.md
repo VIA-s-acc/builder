@@ -58,8 +58,8 @@ A configuration file must be created at `build_cfg/build_modules.json` in the ro
   - `run_tests`: Runs tests after building.
   - `print_result`: Displays the build results.
   - `auto_import`: auto-imports functions detected in the `.pyx` file to `Module.submodule.py` as `raw_func_name` after building also auto-creating functions for class `module` if class exists. 
-  - >[!Note]
-    >(as 1 line, be careful not to lose anything in this line during the build).
+>[!Note]
+>(as 1 line, be careful not to lose anything in this line during the build).
 
     - Example:
       - `.pyx` file: 
