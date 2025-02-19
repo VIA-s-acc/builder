@@ -1,6 +1,6 @@
 *.pyc
 /__pycache__/
-*.pyc/
+
 create_temp.cpython-310*
 
 *.pyo
