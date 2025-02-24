@@ -39,9 +39,20 @@ def create_module(m, s):
         with open(f"{m}/TEST/test.py", 'w') as f:
             f.write(f'''#==========================================================
 # WRITE YOUR GLOBAL {m} TESTS HERE
-# ==========================================================''')
+# ==========================================================\n''')
             f.close()
-        
+            
+    if os.path.exists(f'{m}/TEST/test.py'):
+        lines = []
+        with open(f"{m}/TEST/test.py", 'r') as f:
+            lines = f.readlines()
+            f.close()
+        with open(f"{m}/TEST/test.py", 'a') as f:
+            if f"from ..{s}.Module.{s} import *\n" not in lines:
+                print(f'from ..{s}.Module.{s} import *\n')
+                f.write(f'from ..{s}.Module.{s} import *\n')
+                f.close()
+                
     res = recreate_or_create(m, s)
     if res == -1:
         print(f"\n🔴 {m}.{s} cannot be created | check access")
@@ -63,11 +74,20 @@ def create_module(m, s):
     with open(f"{m}/{s}/__init__.py", 'w') as f:
         f.write(f"from .Module.{s} import *")
         f.close()
+
     with open(f"{m}/{s}/TEST/test.py", "w") as f:
         f.write(f'''#==========================================================
 # WRITE YOUR {m}.{s} TESTS HERE
-# ==========================================================''')
+# ==========================================================\n''')
         f.close()
+        
+    with open(f"{m}/{s}/TEST/test.py", "r") as f:
+        lines = f.readlines()
+        f.close()
+        
+    with open(f"{m}/{s}/TEST/test.py", "a") as f:
+        if f"from ..Module.{s} import *\n" not in lines:
+            f.write(f'from ..Module.{s} import *\n')
         
     print(f"\n🟢 {m}.{s} created successfully")
     
