@@ -149,7 +149,7 @@ def handle_missing_modules(modules, settings):
                     create_module(module_name, submodule)
                 else:
                     print(f"\n🔴 Module {module_name}.{submodule} does not exist. "
-                          f"Skipping (create_if_not_exist = False).")
+                            f"Skipping (create_if_not_exist = False).")
 
 
 def handle_error(error, settings):
