@@ -43,3 +43,4 @@ create_temp.cpython-310*
 *.ilk
 *.ilk/
 *.lnk/
+.vscode
