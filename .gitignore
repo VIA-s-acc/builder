@@ -42,3 +42,4 @@ create_temp.cpython-310*
 *.pdb/
 *.ilk
 *.ilk/
+*.lnk/
