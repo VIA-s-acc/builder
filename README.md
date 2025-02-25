@@ -8,10 +8,6 @@
 
 #### Global Requirements
 - **Python 3.10 or greater** must be installed.
-- Install the necessary dependencies via `pip`:
-  ```bash
-  pip install -r requirements.txt
-  ```
 
 ---
 
