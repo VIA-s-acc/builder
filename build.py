@@ -42,9 +42,19 @@ def parse():
     return args
     
 def main():
+    
     """
-    Main entry point of the program that handles configuration management,
-    module creation, building, and testing.
+    Main entry point of the script. Parses the command line arguments, loads the
+    configuration, and either creates new modules, builds and tests existing ones, or
+    resets the configuration.
+
+    -   If --reset is specified, the configuration is reset and the script exits.
+    -   If --create is specified, new modules are created and the script prompts the user to build them.
+    -   If --modules is specified, the script builds and tests the specified modules.
+    -   If --modules is not specified, the script builds and tests all modules.
+
+    If an error occurs during the build or test process, the script prints the
+    error message and exits.
     """
     args = parse()
     
